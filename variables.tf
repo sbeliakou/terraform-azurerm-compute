@@ -28,7 +28,9 @@ variable "ssh_key" {
 
 variable "remote_port" {
   description = "Remote tcp port to be used for access to the vms created via the nsg applied to the nics."
-  default     = ""
+  type = list
+  default = [""]
+
 }
 
 variable "admin_username" {
